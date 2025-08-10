@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rayyan | Web & App Developer | Lahore</title>
+    <meta name="description" content="Professional website and app developer in Lahore. Let's turn your ideas into reality.">
+    <style>
+        :root {
+            --primary: #6C63FF;  /* Modern purple */
+            --secondary: #4DAAF8; /* Friendly blue */
+            --accent: #FF7E5F;   /* Vibrant peach */
+            --dark: #2D3748;
+            --light: #F7FAFC;
+            --text: #4A5568;
+            --rounded-sm: 8px;
+            --rounded-md: 12px;
+            --rounded-lg: 20px;
+            --rounded-xl: 30px;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: var(--text);
+            background-color: white;
+        }
+        
+        /* Header */
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+            border-bottom-left-radius: var(--rounded-xl);
+            border-bottom-right-radius: var(--rounded-xl);
+        }
+        
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            padding: 1.5rem 0;
+            background: white;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+            z-index: 100;
+        }
+        
+        nav a {
+            color: var(--dark);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: var(--rounded-sm);
+            transition: all 0.3s ease;
+        }
+        
+        nav a:hover {
+            background: rgba(108, 99, 255, 0.1);
+        }
+        
+        /* Main Content */
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 3rem 0;
+        }
+        
+        section {
+            padding: 4rem 0;
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        h2 {
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary);
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 4rem 0 2rem;
+        }
+        
+        .highlight {
+            background: linear-gradient(120deg, var(--accent), var(--primary));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-weight: 700;
+        }
+        
+        /* Persuasive Paragraph */
+        .persuasive {
+            background: var(--light);
+            border-radius: var(--rounded-lg);
+            padding: 2rem;
+            margin: 2rem 0;
+            border-left: 4px solid var(--accent);
+            font-size: 1.1rem;
+        }
+        
+        /* Contact Form */
+        .contact-form {
+            background: white;
+            border-radius: var(--rounded-lg);
+            padding: 2rem;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        
+        input, textarea, select {
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: var(--rounded-sm);
+            font-size: 1rem;
+        }
+        
+        textarea {
+            min-height: 120px;
+        }
+        
+        .submit-btn {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: var(--rounded-sm);
+            font-size: 1rem;
+            cursor: pointer;
+            width: 100%;
+            transition: all 0.3s ease;
+        }
+        
+        .submit-btn:hover {
+            background: var(--secondary);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(77, 170, 248, 0.3);
+        }
+        
+        /* Contact Info */
+        .contact-info {
+            text-align: center;
+            margin-top: 2rem;
+        }
+        
+        .contact-info a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 3rem 0;
+            border-top-left-radius: var(--rounded-xl);
+            border-top-right-radius: var(--rounded-xl);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>My <span class="highlight">Portfolio</span></h1>
+            <p> Im Rayyan, Skilled Web & App Developer | Lahore, Pakistan</p>
+        </div>
+    </header>
+    
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
+    <main class="container">
+        <section class="hero">
+            <h2>Your Vision, <span class="highlight">Perfectly Coded</span></h2>
+            
+            <div class="persuasive">
+                <p>In today's digital world, your online presence <strong>can't be an afterthought</strong>. I specialize in creating websites and apps that don't just look good - they <strong>drive results</strong>. Whether you need a sleek website to showcase your business or a powerful app to solve real problems, I'll work closely with you to build a solution that <strong>exceeds your expectations</strong>. With attention to detail and a focus on user experience, I turn ideas into digital products that <strong>work perfectly</strong> on any device.</p>
+            </div>
+        </section>
+        
+        <section id="services">
+            <h2>What I Offer</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                <div style="background: white; padding: 1.5rem; border-radius: var(--rounded-md); box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                    <h3>Website Development</h3>
+                    <p>Custom websites designed to convert visitors into customers.</p>
+                </div>
+                <div style="background: white; padding: 1.5rem; border-radius: var(--rounded-md); box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                    <h3>App Development</h3>
+                    <p>Mobile applications built for performance and engagement.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h2>Let's Build Something</h2>
+            
+            <div class="contact-form">
+                <form action="https://formsubmit.co/rayyanthe634@gmail.com" method="POST">
+                    <input type="hidden" name="_subject" value="New Project Inquiry!">
+                    <input type="hidden" name="_template" value="table">
+                    
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Tell me about your project</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Get My Free Quote</button>
+                </form>
+            </div>
+            
+            <div class="contact-info">
+                <p><strong>Prefer direct contact?</strong></p>
+                <p>📞 <a href="tel:03390081449">0339 0081449</a> | ✉️ <a href="mailto:rayyanthe634@gmail.com">rayyanthe634@gmail.com</a></p>
+                <p>Based in Lahore, Pakistan | Available worldwide</p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span>  All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        // Current year for copyright
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
